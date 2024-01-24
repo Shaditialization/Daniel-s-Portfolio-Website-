@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root{
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;
+    --dark-color: #343434;
+}
+
+section{
+    font-family: var(--ff-secondary);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--ff-primary);
+}
+
+section{
+    padding: 80px 0px;
+}
+.dark-color{
+    color: var(--dark-color);
+}
+.background-dark{
+    background-color: var(--dark-color);
+}
+
+
+nav {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #fff;
+    
+}
+.fixed-top{
+    z-index: 10000000;
+}
+.navbar-nav .nav-link{
+    color: var(--dark-color);
+}
+
+
+.navbar-nav .nav-link.active {
+    /* color: var(--dark-color); */
+    color: var(--dark-color);
+    font-weight: 600 !important;
+}
+.navbar-nav .nav-link.active::before{
+    /* color: red; */
+    content: "";
+    width: 50px;
+    height: 3px;
+    top: 32px;
+    left: 7px;
+    background-color: var(--dark-color);
+}
+
+/* nav .design {
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 40px;
+    left: 550px;
+    z-index: 900000;
+    width: 80px;
+    height: 3px;
+} */
+
+
+
+
+
+
+
+nav ul li a{
+    position: relative;
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--dark-color);
+    left: 1;
+    bottom: 20%;
+    transition: width 0.5s;
+}
+.home ul li:hover a{
+    color: blue !important;
+    transform: scale(2);
+}
+.home ul li a{
+    transition: all 0.5s;
+}
+/* nav ul li a:hover::before{
+    width: 80%;
+} */
+
+/* .navbar-nav .nav-link.active{
+    
+} */
+
+body:not(:has(:target)) .home-link,
+body:has(.home:target) .home-link,
+body:has(.about:target) .about-link,
+body:has(.services:target) .services-link,
+body:has(.works:target) .works-link,
+body:has(.clients:target) .clients-link,
+body:has(.team:target) .team-link,
+body:has(.contact:target) .contact-link
+{
+    color: var(--dark-color) ;
+}
+
+/* body:not(:has(:target)) .home-link::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.works:target) .works-link::before,
+body:has(.clients:target) .clients-link::before,
+body:has(.team:target) .team-link::before,
+body:has(.contact:target) .contact-link::before
+{
+    width: 80% ;
+} */
+
+
+/* .navbar-nav .nav-link:hover{
+    color: var(--dark-color);
+} */
+
+
+/* Start Navbar */
+    /* .navbar-nav .nav-link.active{
+        text-decoration: underline;
+    }
+        .navbar-nav .nav-link{
+            color: var(--dark-color);
+        } */
+/* End Navbar */
+
+
+
+
+/* Start Home */
+
+
+
+
+#home .text p::after{
+    content: "I Am Larry Daniels|";
+    animation-name: typing;
+    /* animation-delay: 5s; */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes typing {
+    0%{
+        content: "I Am Larry Daniels|";
+    }
+    1.7%{
+        content: "I Am Larry Daniel|";
+    }
+    3.4%{
+        content: "I Am Larry Danie|";
+    }
+    5.1%{
+        content: "I Am Larry Dani|";
+    }
+    6.8%{
+        content: "I Am Larry Dan|";
+    }
+    8.5%{
+        content: "I Am Larry Da|";
+    }
+    10.2%{
+        content: "I Am Larry D|";
+    }
+    11.9%{
+        content: "I Am Larry |";
+    }
+    13.6%{
+        content: "I Am Larry|";
+    }
+    15.3%{
+        content: "I Am Larr|";
+    }
+    17%{
+        content: "I Am Lar|";
+    }
+    18.7%{
+        content: "I Am La|";
+    }
+    20.4%{
+        content: "I Am L|";
+    }
+    22.1%{
+        content: "I Am |";
+    }
+    /*l7d hna 14*/
+    23.8%{
+        content: "I Am D|";
+    }
+    25.5%{
+        content: "I Am De|";
+    }
+    27.2%{
+        content: "I Am Dev|";
+    }
+    28.9%{
+        content: "I Am Deve|";
+    }
+    30.6%{
+        content: "I Am Devel|";
+    }
+    32.3%{
+        content: "I Am Develo|";
+    }
+    34%{
+        content: "I Am Develop|";
+    }
+    35.7%{
+        content: "I Am Develope|";
+    }
+    37.4%{
+        content: "I Am Developer|";
+    }
+    39.1%{
+        content: "I Am Develope|";
+    }
+    40.8%{
+        content: "I Am Develop|";
+    }
+    42.5%{
+        content: "I Am Develo|";
+    }
+    44.2%{
+        content: "I Am Devel|";
+    }
+    45.9%{
+        content: "I Am Deve|";
+    }
+    47.6%{
+        content: "I Am Dev|";
+    }
+    49.3%{
+        content: "I Am De|";
+    }
+    51%{
+        content: "I Am D|";
+    }
+    52.7%{
+        content: "I Am |";
+    }
+    /* l7d hna 18 */
+    54.4%{
+        content: "I Am D|";
+    }
+    56.1%{
+        content: "I Am De|";
+    }
+    57.8%{
+        content: "I Am Des|";
+    }
+    59.5%{
+        content: "I Am Desi|";
+    }
+    61.2%{
+        content: "I Am Desig|";
+    }
+    62.9%{
+        content: "I Am Design|";
+    }
+    64.6%{
+        content: "I Am Designe|";
+    }
+    66.3%{
+        content: "I Am Designer|";
+    }
+    68%{
+        content: "I Am Designe|";
+    }
+    69.7%{
+        content: "I Am Design|";
+    }
+    71.4%{
+        content: "I Am Desig|";
+    }
+    73.1%{
+        content: "I Am Desi|";
+    }
+    74.8%{
+        content: "I Am Des|";
+    }
+    76.5%{
+        content: "I Am De|";
+    }
+    78.2%{
+        content: "I Am D|";
+    }
+    79.9%{
+        content: "I Am |";
+    }
+    /* l7d hna 16 */
+    81.6%{
+        content: "I Am L|";
+    }
+    83.3%{
+        content: "I Am La|";
+    }
+    85%{
+        content: "I Am Lar|";
+    }
+    86.7%{
+        content: "I Am Larr|";
+    }
+    88.4%{
+        content: "I Am Larry|";
+    }
+    90.1%{
+        content: "I Am Larry |";
+    }
+    91.8%{
+        content: "I Am Larry D|";
+    }
+    93.5%{
+        content: "I Am Larry Da|";
+    }
+    95.2%{
+        content: "I Am Larry Dan|";
+    }
+    96.9%{
+        content: "I Am Larry Dani|";
+    }
+    98.6%{
+        content: "I Am Larry Danie|";
+    }
+    100%{
+        content: "I Am Larry Daniel|";
+    }
+    /* l7d hna 12 */
+}
+
+
+
+
+
+
+
+
+
+
+
+#home{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#home .layer{
+    min-height: 100vh;
+}
+#home ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+
+/* End Home */
+
+
+
+
+
+
+/* Start about */
+#about .progress-bar{
+    background-color: var(--dark-color);
+    
+    /* padding: 20px; */
+}
+#about .progress{
+    height: 25px;
+}
+#about .button1{
+    position: relative;
+    z-index: 9000000;
+    transition: all 0.5s;
+}
+#about  .button2 {
+    position: relative;
+    z-index: 9000000;
+    transition: all 0.5s;
+}
+
+#about .button1:hover{
+    background-color: #fff !important;
+    color: var(--dark-color) !important;
+}
+#about .button2:hover {
+    background-color: var(--dark-color) !important;
+    color: #fff !important;
+}
+.peh{
+    line-height: 24px !important;
+}
+#about .shapee{
+    position: absolute;
+    top: 915px;
+    left: 75px;
+}
+
+#services .design{
+    position: absolute;
+    top: 1455px;
+    left: 570px;
+}
+#services .design2{
+    position: absolute;
+    top: 1465px;
+    left: 570px;
+}
+#works .design {
+    position: absolute;
+    top: 2320px;
+    left: 570px;
+}
+#works .design2 {
+    position: absolute;
+    top: 2310px;
+    left: 570px;
+}
+
+/* Start Error in testimonials section (clients)*/
+/* #clients .design {
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 4310px;
+    left: 570px;
+    z-index: 900000;
+}
+
+#clients .design2 {
+    background-color: red;
+    position: absolute;
+    top: 4320px;
+    left: 570px;
+    z-index: 900000;
+} */
+/* End Error in testimonials section (clients)*/
+
+
+#team .design {
+    position: absolute;
+    top: 4310px;
+    left: 570px;
+    z-index: 900000;
+}
+#team .design2 {
+    position: absolute;
+    top: 4320px;
+    left: 570px;
+    z-index: 900000;
+}
+#contact .design {
+    position: absolute;
+    top: 5070px;
+    left: 570px;
+    z-index: 900000;
+}
+
+#contact .design2 {
+    position: absolute;
+    top: 5080px;
+    left: 570px;
+    z-index: 900000;
+}
+/* #about .sora{
+    position: relative !important;
+} */
+/* #about .sora::before{
+    content: "" !important;
+    position: absolute !important;
+    width: 800px !important;
+    height: 300px !important;
+    top: 30% !important;
+    left: -10% !important; */
+    /* background-color: tomato !important; */
+    /* z-index: -5;
+    background-image: url(../images/1_New1.jpg);
+} */
+
+/* End about */
+
+
+
+/* Start services */
+.mainTitle h2{
+    color: var(--dark-color);
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 80px;
+}
+#services h6{
+    font-size: 18px;
+    font-weight: 800;
+}
+#services p{
+    font-size: 14px;
+    font-weight: 400;
+}
+#services .icona{
+    background-color: lightgray;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+#services .icona i{
+    transition: all 0.5s;
+}
+#services .card:hover .icona{
+    background-color: var(--dark-color) !important;
+}
+#services .card:hover .icona i{
+    color: #fff;
+}
+/* End services */
+
+
+
+
+/* Start portfolio */
+#works .one{
+    /* top: 40%; */
+    top: 40%;
+    transition: all 0.5s;
+}
+#works h6{
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+#works .two{
+    /* top: 70% !important; */
+    top: 65% !important;
+    transition: all 0.5s;
+}
+#works .lista li{
+    background-color: #000;
+    color: #fff;
+    top: 30px !important;
+    left: 40px !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#works .layer{
+    width: 95% !important;
+    height: 95% !important;
+    top: 7px !important;
+    left: 9px !important;
+    transition: all 0.5s 0.1s;
+    
+}
+#works .imgportfolio:hover .layer{
+    opacity: 100% !important;
+}
+#works .imgportfolio:hover .one
+{
+    /* top: 50% !important; */
+    top: 45% !important;
+    opacity: 100% !important;
+}
+#works .imgportfolio:hover .two{
+    /* top: 65% !important; */
+    top: 60% !important;
+    opacity: 100% !important;
+}
+#works .nav-link{
+    color: var(--dark-color);
+}
+
+
+/* Start Testimonials */
+
+#clients img{
+    width: 100px;
+    height: 100px;
+}
+#clients .carousel-item p{
+    font-size: 15px;
+    font-weight: 400;
+}
+#clients .carousel-item h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+#clients .carousel-item span{
+    font-size: 12px;
+    font-weight: 600;
+}
+#clients .carousel-indicators{
+    top: 100%;
+}
+
+#clients .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791 !important;
+}
+
+/* Start break */
+#break h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+#break p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #748182;
+}
+/* End break */
+
+/* Start team */
+#team .layer{
+    position: absolute;
+    background-color: #fff;
+    top: 7px;
+    left: 9px;
+    width: 95%;
+    height: 96%;
+    opacity: 0%;
+    transition: transform 0.8s, opacity 0.8s;
+}
+#team .iconaty
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s;
+
+}
+#team .iconaty i{
+    background-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#team .card:hover img{
+    transform: scale(1.2);
+}
+#team img{
+    transition: transform 0.5s;
+}
+
+#team .card:hover .layer{
+    opacity: 95%;
+    transform: rotateY(360deg);
+}
+#team .card:hover .iconaty{
+    opacity: 100%;
+}
+
+/* End team */
+
+/* Start contact */
+#contact .ican{
+    background-color: #F4F4F4;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+#contact h6{
+    font-size: 16px;
+    font-weight: 700;
+}
+#contact p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #8A9392;
+}
+#contact .data:hover .ican{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+#contact .forma{
+    background-color: #F4F4F4;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px;
+}
+#contact .texta {
+    background-color: #F4F4F4;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px;
+}
+#contact .mb-5{
+    margin-bottom: 0 !important;
+}
+#contact .p-4{
+    padding: 10px !important;
+}
+#contact .zorar a{
+    transition: all 0.5s;
+}
+#contact .zorar:hover a{
+    background-color: #fff;
+    color: var(--dark-color);
+}
+#contact .zorar{
+    width: fit-content;
+    border-radius: 50%;                   /* !!!!!!!!!!!!!!!! mn8yrha el div bttl3 brra? a3ml overflow hidden?*/                  
+}
+/* end contact */
+
+
+/* Start Footer */
+footer {
+    padding: 80px 0 0 0;
+    background-color: #1C1C1C;
+}
+footer p{
+    color: #5A696B;
+    margin-top: 20px ;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.t{
+    box-shadow: inset 0 0 10px #8A9392;
+}
+
+
+@media all and (max-width:575px){
+    .about .shapee .yy .one{
+        /* margin-bottom: 200px !important; */
+        /* margin-bottom: 50px; */
+        opacity: 0;
+    }
+}
+@media all and (max-width:575px){
+    .about .kalam{
+        width: 100% !important;
+        /* text-align: center !important; */
+        margin-top: 40px;
+
+    }
+}
+
+@media all and (max-width:575px){
+    .services .ca{
+        margin: 18px 0;
+    }
+}
+
+@media all and (max-width:575px) {
+    .break-area {
+        padding: 20px 0 !important;
+    }
+}
+@media all and (max-width:575px) {
+    #break .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content:space-between;
+        /* display: flex !important;
+        justify-content: center !important;
+        align-items: center !important; */
+    }
+}
+@media all and (max-width:575px) {
+    .ourteam-area .card {
+        margin: 15px 0;
+    }
+}
+/* @media all and (max-width:575px) {
+    .team{
+        width: 100% !important;
+    }
+} */
